@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/2.css" rel="stylesheet">
+    <link href="../CSS/main.css" rel="stylesheet">
+    <title>Tickets</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="head-bar">
+                <div class="custom-logo">Cine-Tec</div>
+        <div class="custom-dropdown">
+            <select id="cityDropdown" class="city-dropdown">
+                <option value="torreon">Torreon</option>
+                <option value="gomez">Gomez</option>
+                <!-- Add more city options here -->
+            </select>
+        </div>
+        <div class="custom-dropdown">
+            <select id="cinemaDropdown" class="cinema-dropdown">
+                <option value="cuatroCaminos">Cuatro Caminos</option>
+                <option value="galerias">Galerias</option>
+                <!-- Add more country options here -->
+            </select>
+        </div>
+        <a href="../HTML/Main.html"><button class="custom-button">Ver Cartelera</button></a>
+            </div>
+        </div>
+    </header>
+    <div class="page-wrap">
+        <section class="main-wrap" role="main">
+            <section class="main">
+                <div class="">
+                    <div class="">
+                        <div class="container container--small tickets ">
+                            <h3 class="title ticket-title">Selecciona tus boletos</h3>
+                            <p class="text">Puedes comprar 10 boletos máximo por transacción.</p>
+                            <div class="ticket-container margin-to-btn">
+                                <div class="tickets__category">
+                                    <div class="tickets__category-type">
+                                        <h4 class="title2 ticket-title2">TRADICIONAL</h4>
+                                        <ul class="nostyle ticket__list">
+                                            <li class="ticket__row">
+                                                <div class="ticket__col">
+                                                    <p class="text">ADULTO </p>
+                                                </div>
+                                                <div class="ticket__col ticket__col--aright">
+                                                    <p class="price">$55</p>
+                                                </div>
+                                                <div class="ticket__col ticket__qty"><span
+                                                        class="ticket__input">0</span>
+                                                    <div class="ticket__actions"><button type="button"
+                                                            class="ticket__action" aria-label="Quitar un boleto ADULTO"
+                                                            disabled=""><svg width="11" height="1" viewBox="0 0 11 1">
+                                                                <path fill="#0096D5" fill-rule="nonzero"
+                                                                    d="M0 1V0h11v1z"></path>
+                                                            </svg></button><button type="button" class="ticket__action"
+                                                            aria-label="Añadir un boleto ADULTO"><svg width="11"
+                                                                height="11" viewBox="0 0 11 11">
+                                                                <g fill="#0096D5" fill-rule="nonzero">
+                                                                    <path d="M0 6V5h11v1z"></path>
+                                                                    <path d="M6 11H5V0h1z"></path>
+                                                                </g>
+                                                            </svg></button></div>
+                                                </div>
+                                            </li>
+                                            <li class="ticket__row">
+                                                <div class="ticket__col">
+                                                    <p class="text">NIÑOS </p>
+                                                </div>
+                                                <div class="ticket__col ticket__col--aright">
+                                                    <p class="price">$55</p>
+                                                </div>
+                                                <div class="ticket__col ticket__qty"><span
+                                                        class="ticket__input">0</span>
+                                                    <div class="ticket__actions"><button type="button"
+                                                            class="ticket__action" disabled=""
+                                                            aria-label="Quitar un boleto NIÑOS"><svg width="11"
+                                                                height="1" viewBox="0 0 11 1">
+                                                                <path fill="#0096D5" fill-rule="nonzero"
+                                                                    d="M0 1V0h11v1z"></path>
+                                                            </svg></button><button type="button" class="ticket__action"
+                                                            aria-label="Añadir un boleto NIÑOS"><svg width="11"
+                                                                height="11" viewBox="0 0 11 11">
+                                                                <g fill="#0096D5" fill-rule="nonzero">
+                                                                    <path d="M0 6V5h11v1z"></path>
+                                                                    <path d="M6 11H5V0h1z"></path>
+                                                                </g>
+                                                            </svg></button></div>
+                                                </div>
+                                            </li>
+                                            <li class="ticket__row">
+                                                <div class="ticket__col">
+                                                    <p class="text">3 ERA EDAD </p>
+                                                </div>
+                                                <div class="ticket__col ticket__col--aright">
+                                                    <p class="price">$55</p>
+                                                </div>
+                                                <div class="ticket__col ticket__qty"><span
+                                                        class="ticket__input">0</span>
+                                                    <div class="ticket__actions"><button type="button"
+                                                            class="ticket__action" disabled=""
+                                                            aria-label="Quitar un boleto 3 ERA EDAD"><svg width="11"
+                                                                height="1" viewBox="0 0 11 1">
+                                                                <path fill="#0096D5" fill-rule="nonzero"
+                                                                    d="M0 1V0h11v1z"></path>
+                                                            </svg></button><button type="button" class="ticket__action"
+                                                            aria-label="Añadir un boleto 3 ERA EDAD"><svg width="11"
+                                                                height="11" viewBox="0 0 11 11">
+                                                                <g fill="#0096D5" fill-rule="nonzero">
+                                                                    <path d="M0 6V5h11v1z"></path>
+                                                                    <path d="M6 11H5V0h1z"></path>
+                                                                </g>
+                                                            </svg></button></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn--primary" disabled="" style="border-radius: 30px;">CONTINUAR</button>
+                            <button type="button" class="btn btn--img ticket-promo" aria-label="Tengo tarjeta o promoción"><figure><img src="/static/media/ticket-promo.09979af4.png" alt=""></figure></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <aside class="main-aside">
+            <header class="main-aside__head">
+                <h3 class="title">Resumen de compra</h3><button type="button" class="close close--active"
+                    aria-label="Cancelar compra"><span class="close__text">Cancelar</span><span
+                        class="icon-cross icon-cross--circle close__cross"><svg width="11" height="11"
+                            viewBox="0 0 11 11">
+                            <g fill="#D61919" fill-rule="nonzero">
+                                <path d="M.793 2.207A1 1 0 1 1 2.207.793l8.062 8.062a1 1 0 0 1-1.414 1.414L.793 2.207z">
+                                </path>
+                                <path
+                                    d="M2.207 10.207A1 1 0 0 1 .793 8.793L8.855.73a1 1 0 1 1 1.414 1.414l-8.062 8.062z">
+                                </path>
+                            </g>
+                        </svg></span></button>
+            </header>
+            <div class="main-aside__body ">
+                <ul class="nostyle poster-list">
+                    <li class="poster-item">
+                        <figure class="poster-item__img"><img
+                                src="https://static.cinepolis.com/resources/mx/movies/posters/264x386/42685-403536-20230804030237.jpg"
+                                alt=""></figure>
+                        <div class="poster-item__info">
+                            <p class="poster-item__text"><span class="blue bold">Película: </span>Cacería en Venecia ESP
+                            </p>
+                            <p class="poster-item__text"><span class="blue bold">Complejo: </span>Cinépolis Cuatro
+                                Caminos</p>
+                            <p class="poster-item__text"><span class="blue bold">Fecha: </span>20 de septiembre de 2023
+                            </p>
+                            <p class="poster-item__text"><span class="blue bold">Función: </span>5:30 PM</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="total">
+                    <p class="text text--small">*Se realizará un cargo por servicio de $6.00 en cada boleto dentro de la
+                        orden.</p>
+                    <p class="total__price"><span class="total__text">Total (IVA incluido): </span> <span
+                            class="total__num">$0</span></p>
+                </div>
+                <div class="container-list-added-items"></div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="github-logo">
+                <img src="../img/github-mark.png" alt="GitHub Logo">
+            </div>
+            <div class="github-info">
+                <p>Find us on GitHub: <a href="https://github.com/DavidCarG">DavidCarG</a> & Dylan</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

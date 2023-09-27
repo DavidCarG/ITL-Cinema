@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Information</title>
+    <link href="../CSS/2.css" rel="stylesheet">
+    <link href="../CSS/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="head-bar">
+                <div class="custom-logo">Cine-Tec</div>
+        <div class="custom-dropdown">
+            <select id="cityDropdown" class="city-dropdown">
+                <option value="torreon">Torreon</option>
+                <option value="gomez">Gomez</option>
+                <!-- Add more city options here -->
+            </select>
+        </div>
+        <div class="custom-dropdown">
+            <select id="cinemaDropdown" class="cinema-dropdown">
+                <option value="cuatroCaminos">Cuatro Caminos</option>
+                <option value="galerias">Galerias</option>
+                <!-- Add more country options here -->
+            </select>
+        </div>
+        <a href="../HTML/Main.html"><button class="custom-button">Ver Cartelera</button></a>
+            </div>
+        </div>
+    </header>
+    <div id="wrapper" class="wrapper">  
+        <div class="page-wrap">
+            <aside class="main-aside">
+                <header class="main-aside__head">
+                    <h3 class="title">Resumen de compra</h3><button type="button" class="close close--active"
+                        aria-label="Cancelar compra"><span class="close__text">Cancelar</span><span
+                            class="icon-cross icon-cross--circle close__cross"><svg width="11" height="11"
+                                viewBox="0 0 11 11">
+                                <g fill="#D61919" fill-rule="nonzero">
+                                    <path
+                                        d="M.793 2.207A1 1 0 1 1 2.207.793l8.062 8.062a1 1 0 0 1-1.414 1.414L.793 2.207z">
+                                    </path>
+                                    <path
+                                        d="M2.207 10.207A1 1 0 0 1 .793 8.793L8.855.73a1 1 0 1 1 1.414 1.414l-8.062 8.062z">
+                                    </path>
+                                </g>
+                            </svg></span></button>
+                </header>
+                <div class="main-aside__body ">
+                    <ul class="nostyle poster-list">
+                        <li class="poster-item">
+                            <figure class="poster-item__img"><img
+                                    src="https://static.cinepolis.com/resources/mx/movies/posters/264x386/42762-169517-20230825092843.jpg"
+                                    alt=""></figure>
+                            <div class="poster-item__info">
+                                <p class="poster-item__text"><span class="blue bold">Película: </span>Los
+                                    Indestructibles 4
+                                    SUB</p>
+                                <p class="poster-item__text"><span class="blue bold">Complejo: </span>Cinépolis VIP
+                                    Cuatro
+                                    Caminos</p>
+                                <p class="poster-item__text"><span class="blue bold">Fecha: </span>21 de septiembre de
+                                    2023
+                                </p>
+                                <p class="poster-item__text"><span class="blue bold">Función: </span>2:45 PM</p>
+                                <p class="poster-item__text"><span class="black bold">Boletos: </span> ADULTO (1) ($160)
+                                </p>
+                                <p class="poster-item__text"><span class="black bold">Asientos: </span>C5</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="total">
+                        <p class="total__price"><span class="total__text">Cargo por servicio: </span> <span
+                                class="total__num">$6</span></p>
+                        <p class="total__price"><span class="total__text">Subtotal: </span> <span
+                                class="total__num">$160</span></p>
+                        <p class="total__price"><span class="total__text">Total (IVA incluido): </span> <span
+                                class="total__num">$166</span></p>
+                    </div>
+                </div>
+            </aside>
+            <section class="main-wrap" role="main">
+                <section class="main">
+                    <div class="">
+                        <form autocomplete="off">
+                            <div class="container container--mid-large payments">
+                                <div class="">
+                                    <div class="payments__shared-fields">
+                                        <h1 class="title">Información personal</h1>
+                                        <div class="row">
+                                            <div class="form-group"><input type="text" name="first_name" id="first_name"
+                                                    class="form-control " autocomplete="off" placeholder=""
+                                                    value=""><label for="first_name" class="form-label"><span
+                                                        class="required-field">*</span>Nombre(s)</label></div>
+                                            <div class="form-group"><input type="text" name="last_name" id="last_name"
+                                                    class="form-control " autocomplete="off" placeholder=""
+                                                    value=""><label for="last_name" class="form-label"><span
+                                                        class="required-field">*</span>Apellidos</label></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group"><input type="email" name="email" id="email"
+                                                    class="form-control " autocomplete="off" placeholder=""
+                                                    value=""><label for="email" class="form-label"><span
+                                                        class="required-field">*</span>Correo electrónico</label></div>
+                                            <div class="form-group"><input type="text" name="tarjeta_cc" id="tarjeta_cc"
+                                                    class="form-control " autocomplete="off" placeholder=""
+                                                    value=""><label for="tarjeta_cc" class="form-label">Tarjeta
+                                                    Club</label>
+                                            </div>
+                                        </div>
+                                        <div class="required-fields-copy"><span class="required-field">*</span>Campos
+                                            obligatorios</div>
+                                    </div>
+                                    <section class="payment__methods">
+                                        <h1 class="title">Selecciona el método de pago</h1>
+                                        <ul class="nostyle payment__types-list select list-big"
+                                            data-selectedmobiletext="Método de pago seleccionado">
+                                            <li class="payment__types-item payment__types-item--card"
+                                                data-code="spreedly_tickets" style="display: block;">
+                                                <figure class="payment__type-img"><img
+                                                        src="../img/credit-card-svgrepo-com.svg"
+                                                        alt="Tarjeta crédito/débito"></figure><span
+                                                    class="payment__type-text">Tarjeta crédito / débito</span>
+                                            </li>
+
+                                            <li class="payment__types-item payment__types-item--paypal"
+                                                data-code="paypal_tickets" style="display: block;">
+                                                <figure class="payment__type-img"><img
+                                                        src="../img/paypal-color-svgrepo-com.svg"
+                                                        alt="Cinépolis Chile - Paypal"></figure><span
+                                                    class="payment__type-text">Paypal</span>
+                                            </li>
+                                        </ul>
+                                        <div class="payment__types"></div>
+                                        <div class="payment__terms">
+                                            <div class="form-group form-group--checkbox"><input type="checkbox"
+                                                    name="accept_terms" id="accept_terms" class="check-control"
+                                                    value=""><label for="accept_terms" class="form-label"><span
+                                                        class="fake-check"></span><span class="text">He leído y estoy de
+                                                        acuerdo con los <a
+                                                            href="https://static.wikia.nocookie.net/supermarioglitchy4/images/2/2f/Backrooms.png/revision/latest?cb=20210904033828"
+                                                            class="link" target="_blank"
+                                                            rel="noopener noreferrer">Términos
+                                                            y Condiciones</a> y &nbsp;<a
+                                                            href="https://static.wikia.nocookie.net/supermarioglitchy4/images/2/2f/Backrooms.png/revision/latest?cb=20210904033828"
+                                                            class="link" target="_blank" rel="noopener noreferrer">Aviso
+                                                            de
+                                                            Privacidad</a>.</span></label></div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="grecaptcha-badge" data-style="none"
+                                            style="width: 256px; height: 60px; position: fixed; visibility: hidden;">
+                                            <div class="grecaptcha-logo"><iframe title="reCAPTCHA"
+                                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcYxXcUAAAAAPd2-4EIfCksacpQd6xVYtQsRP_D&amp;co=aHR0cHM6Ly9jb21wcmEuY2luZXBvbGlzLmNvbTo0NDM.&amp;hl=es&amp;type=image&amp;v=Ai7lOI0zKMDPHxlv62g7oMoJ&amp;theme=light&amp;size=invisible&amp;badge=bottomright&amp;cb=1zw0ug3cnfij"
+                                                    width="256" height="60" role="presentation" name="a-b3922cig85i6"
+                                                    frameborder="0" scrolling="no"
+                                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+                                            </div>
+                                            <div class="grecaptcha-error"></div><textarea id="g-recaptcha-response-3"
+                                                name="g-recaptcha-response" class="g-recaptcha-response"
+                                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payments__submit extra-top" style="top: 330px;"><button type="submit"
+                                        class="btn btn--primary" disabled="">PROCEDER AL PAGO</button><img
+                                        alt="Visa Checkout" class="v-button" role="button" hidden=""
+                                        src="https://secure.checkout.visa.com/wallet-services-web/xo/button.png"></div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="github-logo">
+                <img src="../img/github-mark.png" alt="GitHub Logo">
+            </div>
+            <div class="github-info">
+                <p>Find us on GitHub: <a href="https://github.com/DavidCarG">DavidCarG</a> & Dylan</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
